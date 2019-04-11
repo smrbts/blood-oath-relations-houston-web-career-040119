@@ -33,6 +33,9 @@ There are **no** tests! You will need to test your code on your own!!
 
 ### Domain Modeling
 
+- Cults <---many--> Followers
+-Cults <---many-- BloodOaths ---many---> followers
+
 First step is to model the domain you are building out. As a non-discriminatory cult recruitment platform, `Cult`s will have many `Follower`s while `Follower`s will be allowed to join many `Cult`s. How do they keep track of this? `BloodOath`s of course! You cannot join a `Cult` without making a `BloodOath`.
 
 * What are your models?
@@ -93,7 +96,3 @@ Questions you should ask yourself:
 
 **`BloodOath`**
 
-* `BloodOath#initiation_date`
-  * returns a `String` that is the initiation date of this blood oath in the format _YYYY-MM-DD_.
-* `BloodOath.all`
-  * returns an `Array` of all the blood oaths
